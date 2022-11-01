@@ -2,13 +2,16 @@
 
 body{
     font-family: 'Noto Sans TC', sans-serif;
-    width: 90%;
-    margin: 0 auto;
 }
 
 /* -----------最上方麵包屑------------- */
-.bread{
+.crumb{
+    width: 90%;
+    margin: 0 auto;
     margin-top: 120px;
+}
+
+.bread{
     margin-left: 20px;
     display: flex;
 }
@@ -48,7 +51,8 @@ body{
 /* ---------- 上方資訊區 ------------ */
 
 .top{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     /* border: 1px solid blueviolet; */
     display: flex;
     justify-content: center;
