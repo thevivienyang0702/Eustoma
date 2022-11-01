@@ -1,0 +1,350 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* ------------ 上方進度條 -------------- */
+
+.top{
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+
+.top li div{
+    width: 32px;
+    height: 32px;
+    line-height: 2;
+    background-color: rgb(129, 161, 122, .5);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.top li p{
+    line-height: 1.6;
+    color: #81a17a;
+    margin-top: 10px;
+
+}
+
+.top li:nth-child(2) div{
+    background-color: #81a17a;
+}
+
+/* ------------------ 購物車資料 ------------------ */
+
+.cart_info h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+.cart_info h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+/* --------------- 導覽列 ---------------- */
+
+.cart_info_nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(130, 121, 106, .5);
+
+}
+
+.cart_info_nav li{
+    color: #3d3932;
+    flex-grow: 1;
+
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+    /* outline: 1px solid blue; */
+}
+
+/* ------------------- 商品明細 --------------- */
+
+.product_list{
+    display: flex;
+    margin-top: 20px;
+}
+
+.product_list li{
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-left: 5px;
+    /* outline: 1px solid red; */
+
+}
+
+.product_list li:first-child{
+    flex-grow: 0;
+}
+
+.product_list li:nth-child(2){
+    flex-grow: 0.8;
+}
+
+.product_list li:nth-child(4){
+    padding-left: 10px;
+}
+
+.product_list h2{
+    line-height: 1.6;
+    color: #3d3932;
+    font-family: 'Lato', sans-serif;
+}
+
+.product_list p{
+    color: #b3b3b3;
+}
+
+/* ----------------- 訂單資訊(總計) ----------------- */
+
+.summary{
+    /* border: 1px solid blue; */
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 70%;
+    color: #3d3932;
+    font-family: 'Lato', sans-serif;;
+}
+
+
+.subtotal{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.freight{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(130, 121, 106, .5);
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: #81a17a;
+    font-weight:600;
+}
+
+.summary a{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    line-height: 2;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #81a17a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+
+.summary a:hover{
+    background-color: #fff;
+    outline: 1px solid #81a17a;
+    color: #81a17a;
+
+}
+
+
+/* ------------------- 下方詳細資訊 ----------------- */
+
+article{
+    display: flex;
+}
+
+article h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+article h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+article h2{
+    color: #3d3932;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+article h3{
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+/* ---------- 訂單備註 ------------*/
+
+.left{
+    flex-grow: 1.2;
+    /* border: 1px solid red; */
+}
+
+.left .remark{
+    width: 80%;
+    height: 100px;
+    outline: 0;
+    border: 1px solid #b3b3b3;
+    color: #3d3932;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+/* ----------- 訂購須知 -------------- */
+
+.left .notice{
+    width: 80%;
+    font-size: 14px;
+    color: #82796a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+/* ------------ 送貨資料 ------------------ */
+.right{
+    flex-grow: 1;
+    /* border: 1px solid blue; */
+}
+
+.right .check{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #3d3932;
+
+}
+
+/* ------ 收件人名稱 & 電話 --------- */
+.right .name, .phone{
+    outline: 0;
+    width: 90%;
+    height: 22px;
+    border: 1px solid #82796a;
+    color: #3d3932;
+    padding-left: 5px;
+    border-radius: 3px;
+
+}
+
+.right .name + p{
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+/* ---------- 到貨時間 --------- */
+
+.right .time_text{
+    color: #b3b3b3;
+    font-size: 14px;
+
+}
+
+.right .date{
+    margin-top: 10px;
+    outline: 0;
+    width: 90%;
+    height: 22px;
+    color: #3d3932;
+    border: 1px solid #82796a;
+    padding-left: 5px;
+    border-radius: 3px;
+
+}
+
+/* ----------- 付款資料 ------------ */
+
+.right .credit li{
+    margin-bottom: 10px;
+    
+}
+
+.right .credit li input{
+    width: 90%;
+    height: 22px;
+    outline: 0;
+    border: 1px solid #82796a;
+    color: #3d3932;
+    padding-left: 5px;
+    border-radius: 3px;
+
+}
+
+/* ------------- 提交訂單按鈕 ------------- */
+
+.right a{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    line-height: 2;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #81a17a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+
+.right a:hover{
+    background-color: #fff;
+    outline: 1px solid #81a17a;
+    color: #81a17a;
+}

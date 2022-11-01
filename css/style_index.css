@@ -1,0 +1,697 @@
+@import url(reset.css);
+
+
+body{
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* ----------------首頁的天---------------- */
+
+#header{
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+
+#top{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+
+}
+
+
+.header_logo{
+    width: 80px;
+}
+
+
+.header_list{ 
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.header_list li{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+
+.header_list li a{
+    text-decoration: none;
+    color: #81a17a;
+    display: block;
+    text-align: center;
+    line-height: 1.6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+
+
+.header_icon{
+    display: flex;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+
+
+/* RWD漢堡線 */
+.header_icon .fa-bars{
+    display: none;
+}
+
+
+.header_icon li{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+
+.header_icon li a{
+    color: #82796a;
+}
+
+
+/* --------header選單hover後---------- */
+.header_list li:hover a{
+    box-shadow: inset 0 -3px 0 0 #81a17a;
+
+}
+
+.header_icon li a:hover{
+    color: #3d3932;
+}
+
+
+/* --------------首頁banner輪播圖------------ */
+
+#banner img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    
+}
+
+/* -----------------最新消息----------------- */
+
+#news{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#news img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50px;
+
+}
+
+#news h1{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    color: #81a17a;
+
+}
+
+.info{
+    width: 80%;
+    min-height: 30px;
+    font-size: 18px;
+    padding-left: 50px;
+    margin: 0 auto;
+
+
+}
+
+
+.info a{
+    text-decoration: none;
+    color: #82796a;
+    display: flex;
+    border-bottom: 1px solid rgb(129, 161, 122, 0.5);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+.date{
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+/* 最新消息hover */
+.info a:hover .text{
+    color: #3d3932;
+}
+
+
+/* -----------關於洋桔梗-------------- */
+
+#about{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#about img{
+    width: 650px;
+    border-radius: 0 200px 200px 0;
+    margin-top: 100px;
+
+}
+
+
+.about_text{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.about_text h1{
+    font-size: 24px;
+    color: #81a17a;
+    letter-spacing: 3px;
+}
+
+.about_text h2{
+    font-size: 24px;
+    color: #81a17a;
+    letter-spacing: 3px;
+    text-indent: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.about_text p{
+    color: #82796a;
+    font-size: 18px;
+    margin-bottom: 80px;
+    min-width: 300px;
+}
+
+.about_text a{
+    display: block;
+    width: 200px;
+    line-height: 2;
+    text-align: center;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: #81a17a;
+    border: 1px solid #81a17a;
+    border-radius: 15px;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+
+}
+
+/* view more在hover後效果 */
+.about_text a:hover{
+    color: #fff;
+    background-color: #81a17a;
+}
+
+
+/* -------------------經典熱銷--------------------- */
+
+#product img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50px;
+
+}
+
+#product h1{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    color: #81a17a;
+}    
+
+
+
+/* --------------------- 鮮乳卷 -------------------------- */
+#roll_cake_display{
+    width: 90%;
+    height: 300px;
+    margin: 0 0 0 auto;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+    background: #81a17a; 
+    background: -webkit-linear-gradient(to right,rgb(255, 255, 255), rgba(236, 211, 197, 0.3), rgb(129, 161, 122, .8));
+    background: linear-gradient(to right,rgb(255, 254, 254), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
+    box-shadow: 0 0 3px 3px rgb(129, 161, 122, .1);
+}
+
+#roll_cake{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 0 30px;
+
+}
+
+
+#roll_cake h2{
+    color: #3d3932;
+    font-size: 24px;
+    letter-spacing: 2px;
+
+}
+
+#roll_cake h2 + p{
+    color: #B3B3B3;
+    font-size: 14px;
+    font-family: 'Arima Madurai', cursive;
+    line-height: 1.6;
+    
+}
+
+#roll_cake p + p{
+    font-size: 18px;
+    color: #82796a;
+    margin-top: 30px;
+    line-height: 1.6;
+
+}
+
+#roll_cake a{
+    text-decoration: none;
+    font-family: 'Arima Madurai', cursive;
+    color: #fff;
+    display: block;
+    width: 200px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 30px;
+    background-color: #81a17a;
+    border-radius: 15px;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+/* shop now在hover後效果 */
+#roll_cake a:hover{
+    background-color:#82796a;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+
+}
+
+
+/* ------------------- 戚風蛋糕 -------------------------- */
+
+#chiffon_display{
+    width: 90%;
+    height: 300px;
+    margin: 150px auto 0 0;
+    /* border: 1px solid red; */
+    background: #81a17a; 
+    background: -webkit-linear-gradient(to left,rgb(255, 255, 255), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
+    background: linear-gradient(to left,rgb(255, 254, 254), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
+    box-shadow: 0 0 3px 3px rgb(129, 161, 122, .1);
+
+}
+
+#chiffon{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 0 30px;
+
+
+}
+
+#chiffon h2{
+    color: #3d3932;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#chiffon h2 + p{
+    color: #B3B3B3;
+    font-size: 14px;
+    font-family: 'Arima Madurai', cursive;
+    line-height: 1.6;
+    
+}
+
+#chiffon p + p{
+    font-size: 18px;
+    color: #82796a;
+    margin-top: 30px;
+    line-height: 1.6;
+
+}
+
+#chiffon a{
+    text-decoration: none;
+    font-family: 'Arima Madurai', cursive;
+    color: #fff;
+    display: block;
+    width: 200px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 30px;
+    background-color: #81a17a;
+    border-radius: 15px;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+/* shop now在hover後效果 */
+#chiffon a:hover{
+    background-color:#82796a;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+
+}
+
+
+
+/* ------------- 聖多諾黑 --------------- */
+
+
+#saint_display{
+    width: 90%;
+    height: 300px;
+    margin: 150px 0 0 auto;
+    /* border: 1px solid red; */
+    background: #81a17a; 
+    background: -webkit-linear-gradient(to right,rgb(255, 255, 255), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
+    background: linear-gradient(to right,rgb(255, 254, 254), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
+    box-shadow: 0 0 3px 3px rgb(129, 161, 122, .1);
+
+}
+
+#saint{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0 0 30px;
+
+}
+
+#saint h2{
+    color: #3d3932;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#saint h2 + p{
+    color: #B3B3B3;
+    font-size: 14px;
+    font-family: 'Arima Madurai', cursive;
+    line-height: 1.6;
+}
+
+
+#saint p + p{
+    font-size: 18px;
+    color: #82796a;
+    margin-top: 30px;
+    line-height: 1.6;
+}
+
+
+#saint a{
+    text-decoration: none;
+    font-family: 'Arima Madurai', cursive;
+    color: #fff;
+    display: block;
+    width: 200px;
+    text-align: center;
+    line-height: 2;
+    margin-top: 30px;
+    background-color: #81a17a;
+    border-radius: 15px;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+
+/* shop now在hover後效果 */
+#saint a:hover{
+    background-color:#82796a;
+    transition: color .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+
+
+
+/*---------------------- 點心禮盒-------------------------- */
+#gift_box{
+    clear: both;
+    /* border: 1px solid red; */
+    padding-top: 100px;
+
+}
+
+
+#gift_box img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50px;
+
+}
+
+#gift_box h1{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    color: #81a17a;
+} 
+
+/* ----------------------點心禮盒展示------------------------ */
+
+#gift_box_display{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(236, 210, 196, 0.5);
+    margin-top: 60px;
+
+}
+
+#gift_box_display img{
+    margin-top: 10px;
+}
+
+
+#gift_box_display ul{
+    display: flex;
+}
+
+
+#gift_box_display li{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px 20px;
+
+}
+
+
+
+#gift_box_display li h2{
+    color: #3d3932;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+
+}
+
+#gift_box_display li h2 + p{
+    color: #B3B3B3;
+    font-size: 14px;
+    font-family: 'Arima Madurai', cursive;
+    line-height: 1.6;
+}
+
+#gift_box_display li p + p{
+    /* border: 1px solid red; */
+    font-size: 18px;
+    color: #82796a;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    padding: 0 10px;
+    
+}
+
+
+#gift_box_display a{
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+
+
+#gift_box_display li:hover{
+    background-color: #fff;
+    transition: .3s ease-in;
+
+
+}
+
+/* --------------------- 頁尾 --------------------------- */
+
+#footer{
+
+    margin-top: 50px;
+    /* border: 1px solid blue; */
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* -------------左方logo區 -----------------------*/
+
+
+
+.footer_logo img{
+    width: 100px;
+
+}
+
+
+.footer_logo ul{
+    display: flex;
+}
+
+.footer_logo li{
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.footer_logo .fa-brands{
+    font-size: 28px;
+    text-decoration: none;
+    color: #81a17a;
+}
+
+/* --------------中間 聯絡我們 區 ------------------*/
+
+.contact{
+    color: #81a17a;
+    /* flex-grow: 1; */
+    margin-top: 10px;
+}
+
+
+.contact h2{
+    font-size: 22px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.contact li{
+    line-height: 1.6;
+}
+
+
+.contact .fa-solid{
+    font-size: 14px;
+}
+
+.contact .fa-location-dot{
+    font-size: 16px;
+}
+
+.contact span{
+    margin-left: 10px;
+}
+
+/* --------------左方 顧客服務 區--------------- */
+
+.service{
+    /* flex-grow: 1; */
+    margin-top: 10px;
+}
+
+.service_display{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.service h2{
+    color: #81a17a;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 2;
+
+}
+
+.service_display ul{
+    /* border: 1px solid red; */
+    font-size: 20px;
+    margin-right: 30px;
+
+
+}
+
+
+.service_display li{
+    line-height: 1.6;
+}
+
+.service_display li a{
+    text-decoration: none;
+    color: #81a17a;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+
+
+/* 連結hover後效果 */
+.service_display li:hover a{
+    box-shadow: inset 0 -2px 0 0 #81a17a;
+    
+}
+
+
+/* ------------------- 最底部參考資源 ----------------------- */
+
+.bottom{
+    width: 100%;
+    background-color: #81a17a;
+    margin-top: 50px;
+}
+
+.bottom p{
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    line-height: 2;
+
+}

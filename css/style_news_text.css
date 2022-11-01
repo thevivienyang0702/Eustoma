@@ -1,0 +1,42 @@
+@import url(reset.css);
+
+.news{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.news img{
+    width: 900px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.news h1{
+    color:#3d3932;
+    font-size: 24px;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.news h2{
+    color: #B3B3B3;
+    font-size: 18px;
+    width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+
+}
+
+.news p{
+    color: #82796a;
+    line-height: 1.6;
+    font-size: 20px;
+    width: 900px;
+    margin: 30px auto;
+}

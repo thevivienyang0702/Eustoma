@@ -1,0 +1,139 @@
+@import url(reset.css);
+
+body{
+    font-family:'Noto Sans TC', sans-serif;;
+}
+
+.wrapper{
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 120px;
+    
+}
+
+/* ----------------------------------- */
+.wrapper ul{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(130, 121, 106, .5);
+}
+
+.wrapper ul li{
+    margin-bottom: 10px;
+}
+
+.wrapper ul li a:hover{
+    color: #81a17a;
+    font-weight: 600;
+}
+
+.wrapper li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #82796a;
+
+}
+
+.wrapper .register_page a{
+    color: #81a17a;
+    font-weight: 600;
+}
+
+/* -------------- 使用臉書註冊 --------------- */
+.wrapper .fb{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    line-height: 3;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;;
+    background-color: #3B5998;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.wrapper .fb:hover{
+    background-color: rgb(59, 89, 152, .8);
+}
+
+/* ------------ or分隔線 ------------ */
+
+.wrapper p{
+    text-align: center;
+    margin-top: 20px;
+    color: #82796a;
+
+    position: relative;
+}
+
+.wrapper p::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: rgb(130, 121, 106, .5);
+
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}
+
+.wrapper p::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: rgb(130, 121, 106, .5);
+
+    position: absolute;
+    top: 10px;
+    right: 220px;
+}
+
+/* ------------- 資料填寫區 ------------- */
+
+.main{
+    width: 200px;
+    margin: 20px auto;
+    /* border: 1px solid orange; */
+}
+
+.main h2{
+    color: #81a17a;
+    margin-bottom: 10px;
+    
+}
+
+.main input{
+    margin-bottom: 10px;
+    outline: 0;
+    width: 95%;
+    border: 1px solid #81a17a;
+    padding-left: 5px;
+    color: #3d3932;
+}
+
+/* ------------- 加入會員按鈕 -------------- */
+.register_btn{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    line-height: 3;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;;
+    background-color: #81a17a;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.register_btn:hover{
+    background-color:#3d3932;
+    color: #fff;
+}

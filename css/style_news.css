@@ -1,0 +1,106 @@
+@import url(reset.css);
+
+
+.wrapper{
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+
+.row{
+    /* padding: 0 30px; */
+    margin-top: 100px;
+}
+
+
+.row ul{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.row ul li{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+
+}
+
+
+.row h1{
+    color: #3d3932;
+    font-size: 24px;
+    line-height: 2;
+
+}
+
+
+.row p{
+    color: #B3B3B3;
+    font-size: 18px;
+
+}
+.row a{
+    text-decoration: none;
+
+}
+
+.row img{
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.row a:hover img{
+    transform: scale(1.05);
+
+}
+
+
+/* ------------------------------------------------------- */
+
+.column{
+    /* padding: 0 30px; */
+    margin-top: 100px;
+}
+
+
+.column ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.column ul li{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+
+}
+
+.column h1{
+    color: #3d3932;
+    font-size: 24px;
+    line-height: 2;
+
+}
+
+
+.column p{
+    color: #B3B3B3;
+    font-size: 18px;
+
+}
+.column a{
+    text-decoration: none;
+
+}
+
+.column img{
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.column a:hover img{
+    transform: scale(1.05);
+
+}

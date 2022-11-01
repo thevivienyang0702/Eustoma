@@ -1,0 +1,84 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* ------------ 上方進度條 -------------- */
+
+.top{
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+
+.top li div{
+    width: 32px;
+    height: 32px;
+    line-height: 2;
+    background-color: rgb(129, 161, 122, .5);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.top li p{
+    line-height: 1.6;
+    color: #81a17a;
+    margin-top: 10px;
+
+}
+
+.top li:nth-child(3) div{
+    background-color: #81a17a;
+}
+
+/* --------------- 主資訊(左方) ---------------- */
+
+article{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+article h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+article h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+article h2{
+    line-height: 1.6;
+    color:#3d3932;
+    margin-top: 10px;
+}
+
+.main_right h2 + h1{
+    margin-top: 65px;
+}

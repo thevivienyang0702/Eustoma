@@ -1,0 +1,228 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.wrapper{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* ----------左方導覽列------------- */
+
+nav{
+    /* border: 1px solid blue; */
+    font-family: 'Lato', sans-serif;;
+    margin-top: 150px;
+    padding-left: 20px;
+    margin-right: 20px;
+    
+    flex-basis: 200px;
+
+}
+
+nav ul{
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+
+}
+
+
+nav h1{
+    font-size: 20px;
+    color: #81a17a;
+    margin-bottom: 10px;
+}
+
+nav h1::before{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 20px;
+    background-color: #81a17a;
+    float:left;
+    margin-right: 5px;
+
+
+}
+
+
+nav li{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 8px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #82796a;
+}
+
+nav a:hover{
+    color:#3d3932;
+}
+
+
+
+/* -------------------麵包屑---------------------- */
+
+#bread{
+
+    margin-bottom: 20px;
+
+}
+
+#bread ul{
+    display: flex;
+}
+
+#bread a{
+    text-decoration: none;
+    color: #B3B3B3;
+}
+
+#bread li{
+    position: relative;
+
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+#bread li:before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: #B3B3B3;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
+#bread li:last-child:before{
+    display: none;
+}
+
+/* ----------------商品陳列區------------------ */
+
+section{
+    width: 90%;
+    margin-top: 120px;
+    /* border: 1px solid blue; */
+
+   
+}
+
+
+.main ul{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;     
+    
+    justify-content: center;
+
+}
+
+
+.main ul li{
+    /* border: 1px solid blue; */
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+
+.main li a{
+    text-decoration: none;
+
+}
+
+.main h2{
+    color:#82796a;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.main a:hover h2{
+    color: #3d3932;
+}
+
+
+
+.main p{
+    color: #3d3932;
+    font-family:'Lato', sans-serif;;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+/* 加入購物車按鈕 */
+.main .shop_btn{
+    background-color:#81a17a;
+    color: white;
+    display: block;
+    margin: 0 auto;    
+    width: 120px;
+    line-height: 2;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.main .shop_btn:hover{
+    background-color: #fff;
+    outline: 1px solid #81a17a;
+    color: #81a17a;
+
+}
+
+
+/* ---------------頁次------------------- */
+
+.pages{
+    margin-top: 30px;
+}
+
+.pages ul{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: flex-end; /*伸縮項目水平靠右*/
+   
+}
+
+.pages ul li{
+   margin-right: 20px;
+}
+
+.pages li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #81a17a;
+}
+
+.pages .page_now{
+    display: block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: #81a17a;
+    border-radius: 50%;
+}

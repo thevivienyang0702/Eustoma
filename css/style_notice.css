@@ -1,0 +1,93 @@
+@import url(reset.css);
+
+.upper{
+    margin-top: 120px;
+    display: flex;
+    background-color: rgb(236, 210, 196, .5);
+}
+
+.upper img{
+    width: 50%;
+}
+
+
+.upper_text{
+    /* border: 1px solid red; */
+    padding-top: 50px;
+    padding-left: 50px;
+    
+}
+
+.upper_text h1{
+    font-size: 24px;
+    color: #81a17a;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+
+.upper_text h1:before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 24px;
+    background-color: #81a17a;
+    float: left;
+    margin-right: 10px;
+}
+
+
+.upper_text p{
+    font-size: 20px;
+    color: #3d3932;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    
+}
+
+.upper_text p:nth-child(2n+3){
+    font-size: 18px;
+    color: #B3B3B3;
+    
+}
+
+/* --------------------下方資訊內容------------------------ */
+
+.lower{
+    display: flex;
+    background-color: rgb(236, 210, 196, .5);
+    
+}
+
+.lower img{
+    width: 50%;
+}
+
+.lower_text{
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.lower_text h1{
+    font-size: 24px;
+    color: #81a17a;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+
+}
+
+.lower_text h1:before{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 24px;
+    background-color: #81a17a;
+    float: left;
+    margin-right: 10px;
+}
+
+.lower_text p{
+    font-size: 20px;
+    color: #3d3932;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}

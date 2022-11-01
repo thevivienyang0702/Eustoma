@@ -1,0 +1,379 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* ------------ 上方進度條 -------------- */
+
+.top{
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 120px;
+
+ 
+}
+
+
+.top li div{
+    width: 32px;
+    height: 32px;
+    line-height: 2;
+    background-color: rgb(129, 161, 122, .5);
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.top li p{
+    line-height: 1.6;
+    color: #81a17a;
+    margin-top: 10px;
+
+}
+
+.top li:first-child div{
+    background-color: #81a17a;
+}
+
+/* ----------------- 購物車資料 --------------- */
+
+.cart_info h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+.cart_info h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+/* --------------- 導覽列 ---------------- */
+
+.cart_info_nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(130, 121, 106, .5);
+
+}
+
+.cart_info_nav li{
+    color: #3d3932;
+    flex-grow: 1;
+
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+    /* outline: 1px solid blue; */
+}
+
+
+
+/* ------------------- 商品明細 --------------- */
+
+.product_list{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.product_list li{
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-left: 5px;
+    /* outline: 1px solid red; */
+
+}
+
+/* ----------------- */
+.product_list li:first-child{
+    flex-grow: 0;
+}
+
+.product_list li:nth-child(2){
+    flex-grow: 0.8;
+}
+
+.product_list li:last-child{
+    flex-grow: 0;
+}
+
+/* ---------------------- */
+
+.product_list h2{
+    line-height: 1.6;
+    color: #3d3932;
+    font-family: 'Lato', sans-serif;
+}
+
+.product_list li:nth-child(3) h2{
+    padding-left: 10px;
+}
+
+
+.product_list li:nth-child(5) h2{
+    padding-left: 15px;
+}
+
+.product_list p{
+    color: #b3b3b3;
+}
+
+
+/* ------- 數量的input box -------- */
+.input_box{
+    display: flex;
+    /* width: 110px; */
+    justify-content: center;
+
+    /* border: 1px solid red; */
+}
+
+
+
+.minus, .plus{
+    border: 1px solid  rgb(130, 121, 106, .9);
+    border-radius: 3px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color:  rgb(130, 121, 106, .9);
+    background-color:#fff;
+    font-size: 20px;
+}
+
+
+.input_num{
+    outline: 0;
+    text-align: center;
+    border: none;
+    color: #3d3932;
+    width: 100px;
+    padding: 3px;
+}
+
+
+/* ------------------- 選擇送貨及付款方式 -------------- */
+
+article{
+    display: flex;
+}
+
+
+.delivery{
+    flex-grow: 1;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
+
+.delivery li{
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.delivery h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+.delivery h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+.delivery p{
+    line-height: 1.6;
+    color: #3d3932;
+    margin-bottom: 3px;
+}
+
+.address{
+    outline: none;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #82796a;
+    padding-left: 5px;
+    color: #3d3932;
+    border-radius: 3px;
+}
+
+.method{
+    outline: none;
+    width: 310px;
+    height: 20px;
+    border: 1px solid #82796a;
+    padding-left: 2px;
+    color: #3d3932;
+    border-radius: 3px;
+
+}
+
+.pay{
+    outline: none;
+    width: 310px;
+    height: 20px;
+    border: 1px solid #82796a;
+    padding-left: 2px;
+    color: #3d3932;
+    font-family: 'Lato', sans-serif;
+    border-radius: 3px;
+
+}
+
+/* ----------------- 訂單資訊(總計) ----------------- */
+
+.summary{
+    flex-grow: 1;
+    /* border: 1px solid blue; */
+    margin-top: 40px;
+    color: #3d3932;
+    font-family: 'Lato', sans-serif;;
+}
+
+.summary h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+.summary h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+.subtotal{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.freight{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(130, 121, 106, .5);
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    color: #81a17a;
+    font-weight:600;
+}
+
+.summary a{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    line-height: 2;
+    text-align: center;
+    margin: 30px auto;
+    background-color: #81a17a;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+
+.summary a:hover{
+    background-color: #fff;
+    outline: 1px solid #81a17a;
+    color: #81a17a;
+
+}
+
+/* ------------------訂購須知------------------- */
+
+.notice h1{
+    font-size: 18px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 8px;
+
+    position: relative;
+}
+
+.notice h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 16px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+
+.notice p{
+    font-size: 14px;
+    color: #82796a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

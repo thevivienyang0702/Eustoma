@@ -1,0 +1,333 @@
+@import url(reset.css);
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* -----------最上方麵包屑------------- */
+.bread{
+    margin-top: 120px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.bread li{
+    position: relative;
+
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.bread li::before{
+    content: '';
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: #B3B3B3;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.bread li:last-child::before{
+    display: none;
+}
+
+.bread a{
+    text-decoration: none;
+    color: #B3B3B3;
+}
+
+
+
+/* ---------- 上方資訊區 ------------ */
+
+.top{
+    width: 100%;
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------左方圖片區-------------------- */
+
+.left_img{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.left_img ul{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+/* -------------右方文字區--------------------- */
+
+
+
+.text_box{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.text_box h1{
+    font-size: 28px;
+    color: #3d3932;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text_box h2{
+    font-size: 14px;
+    color: #82796a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text_box h3{
+    color: #3d3932;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.text_box h3 span{
+    font-weight: bold;
+}
+
+
+.text_box h3 + p{
+    color: #81a17a;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+/* --- 尺寸和數量橫向排列 --- */
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* --- 左邊尺寸 --- */
+
+.size{
+    margin-right: 30px;
+}    
+
+
+.size p{
+    color: #3d3932;
+    font-size: 16px;
+    line-height: 1.6;
+
+}
+
+.size button{
+    background-color: #fff;
+    border: 1px solid #3d3932;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #3d3932;
+    width: 86px;
+    padding: 5px 24px;
+    margin-right: 3px;
+
+}
+
+.size button:hover{
+    border-color: #81a17a;
+    color: #81a17a;
+}
+
+
+
+/* --- 右邊數量 --- */
+
+.quantity p{
+    color: #3d3932;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 3px;
+}
+
+/* --- 加減數量的input橫向排列 --- */
+.qty_numbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.minus, .plus{
+    border: none;
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    background-color: rgb(130, 121, 106, .9);
+    font-size: 20px;
+
+}
+
+.minus{
+    border-radius: 3px 0 0 3px;
+}
+
+.plus{
+    border-radius: 0 3px 3px 0;
+}
+
+
+
+.input_num{
+    text-align: center;
+    border: 1.3px solid #82796a;
+    font-size: 18px;
+    color: #3d3932;
+    width: 125px;
+
+}
+
+
+/* ----------按鈕部分---------- */
+
+.btn_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+.btn_box a{
+    text-decoration: none;
+    border: 1px solid #81a17a;
+    border-radius: 3px;
+    width: 180px;
+    line-height: 3;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 20px;
+
+}
+
+.btn_box a:first-child{
+    background-color: #81a17a;
+    color: #fff;
+}
+
+.btn_box a:last-child{
+    background-color: #fff;
+    color: #81a17a;
+}
+
+.btn_box a:hover{
+    background-color: #82796a;
+}
+
+.btn_box a:last-child:hover{
+    color: #fff;
+}
+
+/* --------------- 下方商品詳細描述 ------------------ */
+
+/* --- 導覽列 --- */
+.detail{
+    width: 70%;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+
+.detail_nav{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    border-bottom: 1px solid rgb(130, 121, 106, .5);
+}
+
+.detail_nav li{
+   font-size: 18px;
+   line-height: 1.6;
+   padding-bottom: 12px;
+
+}
+
+.detail_nav li a{
+    text-decoration: none;
+    color: #3d3932;
+}
+
+.detail_nav li:first-child a{
+    color: #81a17a;
+    font-weight: 600;
+}
+
+.detail_nav li a:hover{
+    color: #81a17a;
+}
+
+/* --- 文案1 --- */
+
+.text h1{
+    font-size: 28px;
+    color: #3d3932;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+
+    position: relative;
+}
+
+.text h1::after{
+    content: '';
+    display: block;
+    width: 3px;
+    height: 24px;
+    background-color: #81a17a;
+
+    position: absolute;
+    left: 0px;
+    top: 12px;
+
+}
+
+.text h2{
+    font-size: 16px;
+    color: #82796a;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.text img{
+    width: 100%;
+}
+
+.text img + h2{
+    margin-top: 20px;
+}
+
+/* --- 文案3粗體字 --- */
+
+.text span{
+    background-color:rgb(236, 210, 196, .5);
+    color:#81a17a;
+   
+}
+

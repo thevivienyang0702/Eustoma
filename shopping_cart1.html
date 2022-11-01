@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車 | 洋桔梗甜點工作室</title>
+
+    <!-- Gppgle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
+        
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Courgette&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Courgette&family=Lato:ital@1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Courgette&family=Lato:ital@1&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/style_shopping_cart1.css">
+
+</head>
+<body>
+
+        <!-- 置頂導覽列 -->
+
+        <header id="header">
+
+            <div id="top">            
+        
+                <a href="index.html"><img src="img/logo.png" alt="" class="header_logo"></a>
+           
+    
+                <ul class="header_list">
+                    <li><a href="about.html">關於洋桔梗</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="all_product.html">所有商品</a></li>
+                    <li><a href="notice.html">訂購須知</a></li>
+                </ul>
+    
+                <ul class="header_icon">
+                    <i class="fa-solid fa-bars"></i>
+                    <li><a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="shopping_cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+    
+            </div>
+    
+    
+        </header>
+    
+
+    <section class="wrapper">
+        <!--------------- 上方進度條 ----------------->
+
+        <ul class="top">
+            <li>
+                <div>1</div>
+                <p>購物車</p>
+            </li>
+
+            <li>
+                <div>2</div>
+                <p>填寫資料</p>
+            </li>
+
+            <li>
+                <div>3</div>
+                <p>訂單確認</p>
+            </li>
+        </ul>
+
+        <!---------------- 購物車資料 --------------->
+
+        <div class="cart_info">
+            <h1>購物車</h1>
+
+            <!-- 導覽列 -->
+            <ul class="cart_info_nav">
+                <li>商品資料</li>
+                <li>單價</li>
+                <li>數量</li>
+                <li>小計</li>
+            </ul>
+
+            <!-- 商品明細 -->
+            <ul class="product_list">
+                <li>
+                    <img src="./img/shopping_cart1.png" alt="">
+                </li>
+
+                <li>
+                    <h2>草莓伯爵茶戚風</h2>
+                    <p>4吋</p>
+                </li>
+
+                <li>
+                    <h2>NT$580</h2>
+                </li>
+
+                <li>
+                    <ol class="input_box">
+                        <li><button class="minus">-</button></li>
+                        <li><input type="text" class="input_num" value="1"></li>
+                        <li><button class="plus">+</button></li>
+                    </ol>
+                </li>
+
+                <li>
+                    <h2>NT$580</h2>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+
+
+    <!-- 送貨和訂單資訊flex -->
+    <article>
+
+        <!-------------- 選擇送貨及付款方式 ----------------->
+
+        <div class="delivery">
+
+            <h1>選擇送貨及付款方式</h1>
+
+            <ul>
+                <li>
+                    <p>購買人地址</p>
+                    <input type="text" class="address" placeholder="請填寫詳細購買人地址：路/巷/弄/樓">
+                </li>
+
+                <li>
+                    <p>送貨方式</p>
+                    <select name="" id="" class="method">
+                        <option value="">自取</option>
+                        <option value="">宅配</option>
+                    </select>
+                </li>
+
+                <li>
+                    <p>付款方式</p>
+                    <select name="" id="" class="pay">
+                        <option value="">信用卡(VISA/Master/JCB)</option>
+                    </select>
+                </li>
+
+            </ul>
+
+
+        </div>
+
+        <!------------------- 訂單資訊(總計) --------------------------->
+
+        <div class="summary">
+            <h1>訂單資訊</h1>
+        
+                <div class="subtotal">
+                    <p>小計：</p>
+                    <p>NT$580</p>
+                </div>
+        
+                <div class="freight">
+                    <p>運費：</p>
+                    <p>NT$0</p>
+                </div>
+
+                <div class="total">
+                    <p>合計：</p>
+                    <p>NT$580</p>
+                </div>
+            
+            <a href="shopping_cart2.html">前往結帳</a>
+        
+        
+        </div>
+
+    </article>
+
+    <!--------------- 訂購須知 ---------------->
+
+    <div class="notice">
+        <h1>訂購須知</h1>
+
+        <p>
+            ▴付款完成後才算訂單成立，最快取貨日為下單當天 + ４日後<br>
+            ▴訂單狀態／商品缺貨等通知皆會先以「E-MAIL 電子郵件」 通知，下單完成請留意您的信箱<br>
+            ▴黑貓宅配運送天數約1-2天 ，遇特殊節慶或假日無法選擇到貨日期、到貨時段<br>
+
+        </p>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    </section>
+    <!-------------- 頁尾 --------------------->
+
+    <footer id="footer">
+
+        <div class="container"> <!--最後用這個flex-->
+
+        <!-- 左方 logo區 -->
+            <div class="footer_logo">
+
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-line"></i>
+                        </a>
+                    </li>
+                </ul>
+           
+            </div>
+
+        <!-- 中間 聯絡我們 區 -->
+
+            <div class="contact">
+                <ul>
+                    <li>
+                        <h2>聯絡我們</h2>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i><span>02-27004321</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-clock"></i><span>週二至週日 12:00-19:30</span>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i><span>台北市文山區木新路三段312號</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        <!-- 右方 顧客服務 區 -->
+
+            <div class="service">
+
+                <h2>顧客服務</h2>
+
+                <div class="service_display">
+                    <ul>
+                        <li>
+                            <a href="about.html">品牌故事</a>
+                        </li>
+
+                        <li>
+                            <a href="news.html">最新消息</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="all_product.html">商品列表</a>
+                        </li>
+
+                        <li>
+                            <a href="notice.html">訂購須知</a>
+                        </li>
+                    </ul>
+
+
+
+
+                </div>
+
+
+            </div>
+
+    </div>
+
+
+    <!-- 最底部參考資源 -->
+    <div class="bottom">
+        <p>
+            本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。參考資源: https://www.crewsdessert.com/。
+        </p>
+
+    </div>
+
+    </footer>
+
+
+
+    
+</body>
+</html>
