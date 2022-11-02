@@ -261,7 +261,6 @@ body{
     background: #81a17a; 
     background: -webkit-linear-gradient(to right,rgb(255, 255, 255), rgba(236, 211, 197, 0.3), rgb(129, 161, 122, .8));
     background: linear-gradient(to right,rgb(255, 254, 254), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
-    box-shadow: 0 0 3px 3px rgb(129, 161, 122, .1);
 }
 
 #roll_cake{
@@ -330,7 +329,6 @@ body{
     background: #81a17a; 
     background: -webkit-linear-gradient(to left,rgb(255, 255, 255), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
     background: linear-gradient(to left,rgb(255, 254, 254), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
-    box-shadow: 0 0 3px 3px rgb(129, 161, 122, .1);
 
 }
 
@@ -401,7 +399,6 @@ body{
     background: #81a17a; 
     background: -webkit-linear-gradient(to right,rgb(255, 255, 255), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
     background: linear-gradient(to right,rgb(255, 254, 254), rgb(236, 210, 196, .3), rgb(129, 161, 122, .8));
-    box-shadow: 0 0 3px 3px rgb(129, 161, 122, .1);
 
 }
 
