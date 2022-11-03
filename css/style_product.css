@@ -51,7 +51,7 @@ body{
 /* ---------- 上方資訊區 ------------ */
 
 .top{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     /* border: 1px solid blueviolet; */
     display: flex;
