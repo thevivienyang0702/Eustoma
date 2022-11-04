@@ -176,14 +176,13 @@ body{
     background-color: #81a17a;
     color: #fff;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 18px;
 
 }
 
 .summary a:hover{
-    background-color: #fff;
-    outline: 1px solid #81a17a;
-    color: #81a17a;
+    background-color: #3d3932;
+    outline: 1px solid #3d3932;
 
 }
 
@@ -339,12 +338,11 @@ article h3{
     background-color: #81a17a;
     color: #fff;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 18px;
 
 }
 
 .right a:hover{
-    background-color: #fff;
-    outline: 1px solid #81a17a;
-    color: #81a17a;
+    background-color: #3d3932;
+    outline: 1px solid #3d3932;
 }

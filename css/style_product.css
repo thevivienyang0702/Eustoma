@@ -12,7 +12,7 @@ body{
 }
 
 .bread{
-    margin-left: 20px;
+    margin-left: 10%;
     display: flex;
 }
 
@@ -111,11 +111,13 @@ body{
 
 
 .text_box h3 + p{
+    /* 價格標示 */
     color: #81a17a;
     font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: right;
 }
 
 

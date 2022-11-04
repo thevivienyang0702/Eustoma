@@ -1,5 +1,9 @@
 @import url(reset.css);
 
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
 /* --------------- 中間敘述區域 -------------------- */
 
 
@@ -72,7 +76,6 @@
     line-height: 1.6;
     margin-left: 30px;
     margin-top: 100px;
-
     padding-left: 50px;
 
 }

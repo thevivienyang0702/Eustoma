@@ -1,47 +1,42 @@
 @import url(reset.css);
 
 section{
-    background-color: rgb(236, 210, 196, .5);
     /* border: 1px solid green; */
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
 /* --------------------------------------------------- */
 
 .upper{
-    /* outline: 1px solid blue; */
+    background-color: rgb(236, 210, 196, .3);
     margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .upper ul{
     display: flex;
-    justify-content: center;
-}
-
-
-
-
-.upper img{
-    width: 100%;
-    box-shadow: 0 0 3px 2px rgba(171, 170, 170, 0.5);
-}
-
-
-.upper_text{
-    /* border: 1px solid red; */
-    min-width: 40%;
-    padding-left: 30px;
-
-    
 }
 
 
 .upper_pic{
     min-width: 50%;
-    flex-grow: 1;
+    flex-basis: 0;
+    /* flex-grow: 1; */
 
 }
+
+.upper img{
+    width: 100%;
+}
+
+.upper_text{
+    /* border: 1px solid red; */
+    min-width: 40%;
+    padding-left: 30px;
+    
+}
+
 
 .upper_text h1{
     font-size: 24px;
@@ -76,9 +71,11 @@ section{
     
 }
 
-/* --------------------下方資訊內容------------------------ */
+/* -------------------- 下方資訊內容 ------------------------ */
 
-
+.lower{
+    background-color: rgb(236, 210, 196, .3);
+}
 
 .lower ul{
     /* border: 1px solid blue; */
@@ -87,26 +84,25 @@ section{
 }
 
 
+.lower_pic{
+    max-width: 50%;
+    flex-grow: 1;
+    
+}
 
 .lower img{
     width: 100%;
-    box-shadow: 0 0 3px 2px rgba(171, 170, 170, 0.5);
-
 }
 
+
 .lower_text{
+    color: #3d3932;
     /* padding-top: 50px; */
     padding-left: 30px;
     padding-right: 20px;
     /* min-width: 40%; */
     flex-basis: 0;
     flex-grow: 1;
-}
-
-.lower_pic{
-    max-width: 50%;
-    flex-grow: 1;
-    
 }
 
 .lower_text h1{
@@ -138,4 +134,17 @@ section{
 .lower_text span{
     font-size: 16px;
     color: #B3B3B3;
+}
+
+.lower_text ol{
+    list-style:square;
+    padding-left: 20px;
+
+}
+
+.lower_text ol li{
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+
 }
