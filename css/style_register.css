@@ -4,6 +4,9 @@ body{
     font-family:'Noto Sans TC', sans-serif;;
 }
 
+/* --------------- 主要資訊 -------------------- */
+
+
 .wrapper{
     /* border: 1px solid red; */
     width: 30%;
@@ -12,7 +15,6 @@ body{
     
 }
 
-/* ----------------------------------- */
 .wrapper ul{
     display: flex;
     justify-content: space-evenly;
@@ -31,13 +33,14 @@ body{
 .wrapper li a{
     text-decoration: none;
     font-size: 18px;
-    color: #82796a;
+    color: #b3b3b3;
 
 }
 
 .wrapper .register_page a{
     color: #81a17a;
     font-weight: 600;
+    text-shadow: 0 0 #82796a;
 }
 
 /* -------------- 使用臉書註冊 --------------- */
@@ -70,29 +73,6 @@ body{
     position: relative;
 }
 
-.wrapper p::before{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 1px;
-    background-color: rgb(130, 121, 106, .5);
-
-    position: absolute;
-    top: 10px;
-    left: 220px;
-}
-
-.wrapper p::after{
-    content: '';
-    display: block;
-    width: 20px;
-    height: 1px;
-    background-color: rgb(130, 121, 106, .5);
-
-    position: absolute;
-    top: 10px;
-    right: 220px;
-}
 
 /* ------------- 資料填寫區 ------------- */
 
@@ -112,7 +92,7 @@ body{
     margin-bottom: 10px;
     outline: 0;
     width: 95%;
-    height: 20px;
+    line-height: 2;
     border: 1px solid #81a17a;
     padding-left: 5px;
     color: #3d3932;

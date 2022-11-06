@@ -274,7 +274,7 @@ article h3{
 .right .name, .phone{
     outline: 0;
     width: 90%;
-    height: 22px;
+    height: 30px;
     border: 1px solid #82796a;
     color: #3d3932;
     padding-left: 5px;
@@ -300,7 +300,7 @@ article h3{
     margin-top: 10px;
     outline: 0;
     width: 90%;
-    height: 22px;
+    height: 30px;
     color: #3d3932;
     border: 1px solid #82796a;
     padding-left: 5px;
@@ -317,7 +317,7 @@ article h3{
 
 .right .credit li input{
     width: 90%;
-    height: 22px;
+    height: 30px;
     outline: 0;
     border: 1px solid #82796a;
     color: #3d3932;
