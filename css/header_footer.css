@@ -65,7 +65,7 @@
 }
 
 /* RWD漢堡線 */
-.header_icon .fa-bars{
+#top .fa-bars{
     display: none;
 }
 
@@ -232,5 +232,134 @@
     color: #fff;
     font-size: 10px;
     line-height: 2;
+
+}
+
+/* ------------------ RWD 414 ---------------------------- */
+
+@media screen and (max-width: 414px){
+
+    /* -------------- 頁首 --------------- */
+
+    #top{
+        width: auto;
+        position: relative;
+    }
+
+    .header_logo{
+        width: 50px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+
+    .header_list{
+        width: 50%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 0 15px 0 15px;
+
+        position: fixed;
+        left: 0px;
+        top: 55px;
+
+        left: -500px;
+        transition: all .5s;
+
+    }
+
+
+    .header_icon{
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    .header_icon li{
+        font-size: 16px;
+    }
+
+
+    #top .fa-bars{
+        display: block;
+        color: #82796a;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        order: 3;
+    }
+
+    #top .fa-bars:hover + ul{
+        left: 0;
+        /* display: block; */
+    }
+
+
+    .header_list li{
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+
+
+    .header_list li a{
+        text-align: left;
+
+    }
+
+
+    /* ------------------- 頁尾 ------------------ */
+
+    .container{
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    .footer_logo img{
+        display: none;
+    }
+    .footer_logo{
+        order: 3;
+    }
+
+    .footer_logo .fa-brands{
+        font-size: 26px;
+
+    }
+
+    .footer_logo li{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .contact h2{
+        font-size: 18px;
+
+    }
+
+    .service h2{
+        font-size: 18px;
+    }
+
+    .service_display li a{
+        font-size: 16px;
+    }
+
+    .bottom{
+        width: auto;
+
+    }
+
+    .bottom p{
+        font-size: 5px;
+        line-height: 1.6;
+        padding: 5px;
+
+    }
 
 }
