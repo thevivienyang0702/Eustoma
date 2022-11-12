@@ -31,6 +31,7 @@
     /* border: 1px solid blue; */
     display: flex;
     flex-grow: 1;
+    position: relative;
 }
 
 
@@ -54,6 +55,29 @@
     text-align: center;
     line-height: 1.6;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+
+/* ----- 子選單 ------ */
+.header_list ol{
+    border: 1px solid #b3b3b3;
+    background-color: #fff;
+    color: #81a17a;
+    position: absolute;
+    display: none;
+
+}
+
+.header_list ol li{
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    padding: 10px 5px;
+}
+
+.header_list ol li a{
+    width: 100px;
+    text-align: left;
+    font-size: 16px;
 
 }
 
@@ -82,17 +106,29 @@
 
 
 /* --------header選單hover後---------- */
-.header_list li:hover a{
+
+/* 主選單hover後效果 */
+.header_list > li > a:hover{
     box-shadow: inset 0 -3px 0 0 #81a17a;
 
 }
 
+/* 右方icon hover後效果 */
 .header_icon li a:hover{
     color: #3d3932;
 }
 
 
+/* 子選單hover後效果 */
+.header_list ol li:hover a{
+    box-shadow: none;
+    color: #3d3932;
+}
 
+/* 主選單hover時出現子選單 */
+.header_list li:hover ol{
+    display: block;
+}
 
 
 
