@@ -58,9 +58,11 @@ body{
     justify-content: center;
 }
 
-/* -------------左方圖片區-------------------- */
+
+/* ------------- 左方圖片區 -------------------- */
 
 .left_img{
+    /* border: 1px solid blue; */
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -74,8 +76,12 @@ body{
 
 
 
-/* -------------右方文字區--------------------- */
+/* ------------- 右方文字區 --------------------- */
 
+/* .right_text{
+    border: 1px solid blue;
+
+} */
 
 
 .text_box{
@@ -184,7 +190,7 @@ body{
     text-align: center;
     line-height: 25px;
     color: #fff;
-    background-color: rgb(130, 121, 106, .9);
+    background-color: #82796a;
     font-size: 20px;
 
 }
@@ -201,7 +207,7 @@ body{
 
 .input_num{
     text-align: center;
-    border: 1.3px solid #82796a;
+    border: 1px solid #82796a;
     font-size: 18px;
     color: #3d3932;
     width: 125px;
@@ -337,3 +343,117 @@ body{
    
 }
 
+/* ----------------------- RWD ------------------------ */
+
+@media screen and (max-width: 414px){
+
+    /* ---------- 麵包屑 ------------ */
+
+    .bread{
+        margin-left: 3%;
+    }
+
+    .crumb{
+        margin-top: 60px;
+        font-size: 14px;
+    }
+
+    /* --------- 上方資訊區 ---------- */
+
+    .top{
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .left_img{
+        margin-right: 0;
+    }
+
+    .left_img img{
+        width: 100%;
+    }
+
+
+    .left_img ul{
+        justify-content: space-between;
+    }
+
+
+    .text_box{
+        margin-left: 0;
+    }
+
+
+    .text_box h1{
+        font-size: 20px;
+
+    }
+
+    .text_box h3 + p{
+        text-align: left;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .size{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .size button{
+        width: 90px;
+    }
+
+    .qty_numbox{
+        justify-content: flex-start;
+    }
+
+    .qty_numbox li:nth-child(2){
+        flex-grow: 1;
+    }
+
+    .input_num{
+        width: 98%;
+    }
+
+    .btn_box{
+        justify-content: space-between;
+    }
+
+    .btn_box a{
+        margin-left: 0;
+        width: 170px;
+    }
+
+
+    /* ------------- 下方商品描述區 --------------- */
+
+    .detail{
+        width: 85%;
+    }
+
+    .detail_nav{
+        margin-top: 70px;
+    }
+
+    .detail_nav li{
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+    .text h1{
+        font-size: 20px;
+    }
+
+    .text h1::after{
+        height: 20px;
+        position: absolute;
+        left: 3px;
+        top: 8px;
+    }
+
+    
+
+}
