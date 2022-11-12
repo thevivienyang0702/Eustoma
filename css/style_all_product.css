@@ -226,3 +226,55 @@ section{
     background-color: #81a17a;
     border-radius: 50%;
 }
+
+/* -------------------- RWD -------------------- */
+
+@media screen and (max-width: 414px){
+
+    nav{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+        margin-top: 60px;
+
+    }
+
+    #bread{
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #bread a{
+        font-size: 14px;
+    }
+
+    /* ------- 主要商品 ------- */
+
+    .main ul{
+        justify-content: space-around;
+    }
+
+    .main ul li{
+        margin-left: 0;
+    }
+
+    .main h2, .main p{
+        font-size: 18px;
+    }
+
+
+    /* -------- 頁次 ---------- */
+
+    .pages ul{
+        justify-content: center;
+    }
+
+
+
+
+
+
+}
