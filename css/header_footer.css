@@ -269,6 +269,10 @@
 
     }
 
+    .header_list .page{
+        border: 0;
+    }
+
 
     .header_icon{
         margin-top: 15px;

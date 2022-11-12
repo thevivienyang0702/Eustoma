@@ -110,3 +110,59 @@ section img{
     transform: scale(1.05);
 
 }
+
+/* -------------------- RWD ---------------------- */
+
+@media screen and (max-width: 414px){
+
+    section{
+        width: 85%;
+    }
+
+    .row{
+        margin-top: 60px;
+    }
+
+    .row ul, .column ul{
+        flex-direction: column;
+    }
+
+
+    .row ul li{
+        margin-left: 0;
+    }
+
+    .row a, .column a {
+        margin-bottom: 20px;
+    }
+
+
+    .row img, .column img{
+        width: 100%;
+    }
+
+    .row h1, .column h1{
+        font-size: 18px;
+    }
+
+    .row p, .column p{
+        font-size: 14px;
+    }
+
+
+    /* --------- column ----------- */
+
+    .column{
+        margin-top: 0;
+    }
+
+
+    .column ul li{
+        padding-left: 0;
+    }
+
+
+
+
+
+}
