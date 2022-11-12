@@ -142,3 +142,20 @@ body{
 .password:hover{
     color: #82796a;
 }
+
+/* ------------------ RWD ----------------- */
+
+@media screen and (max-width: 414px){
+
+    .wrapper{
+        width: 85%;
+        margin-top: 90px;
+    }
+
+    .main h2{
+        font-size: 14px;
+    }
+
+
+
+}

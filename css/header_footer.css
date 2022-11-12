@@ -368,7 +368,7 @@
     }
 
     .footer_logo .fa-brands{
-        font-size: 26px;
+        font-size: 24px;
 
     }
 
@@ -378,16 +378,20 @@
     }
 
     .contact h2{
-        font-size: 18px;
+        font-size: 16px;
 
+    }
+
+    .contact span{
+        font-size: 14px;
     }
 
     .service h2{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .service_display li a{
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .bottom{
