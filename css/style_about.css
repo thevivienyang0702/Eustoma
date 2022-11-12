@@ -159,3 +159,125 @@ body{
 }
 
 
+/* ------------------ RWD 414 ---------------------------- */
+@media screen and (max-width: 414px){
+
+    /* ------------------- 中間敘述區 ------------------ */
+
+    #header{
+        width: 100%;
+    }
+
+    .header_list .page{
+        border: 0;
+    }
+
+    body{
+        width: auto;
+    }
+
+
+    #about_main{
+        width: auto;
+    }
+
+
+
+    .main_text{
+        flex-direction: column;
+        width: auto;
+    }
+
+    .main_text .pic2{
+        width: 38%;
+        margin-left: 90px;
+    }
+
+    .main_text .mainpic_bottom{
+        background-image:url(../img/about_pic1_rwd.png);
+        width: 125px;
+        height: 175px;
+
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+
+    }
+
+    .main_text li:nth-child(2){
+        margin-left: 0;
+
+    }
+
+    .main_text h1{
+        font-size: 22px;
+        margin-top: 30px;
+        margin-left: 0;
+        border: 0;
+        text-align: center;
+    }
+
+    .main_text span{
+        color: #81a17a;
+    }
+
+    .main_text p{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 26px;
+        padding-left: 0;
+
+    }
+
+/* ------------------- 下方購物區 ------------------ */
+
+    #about_shop{
+        margin-top: 50px;
+    }
+
+    .shop_text {
+        flex-direction: column-reverse;
+    }
+
+    .shop_text .shop_bottom{
+        background-image: url(../img/about_pic3_rwd.png);
+        width: 185px;
+        height: 134px;
+
+        position: absolute;
+        left: 40%;
+    }
+
+    .shop_text .pic4{
+        width: 55%;
+        margin-left: 30px;
+    }
+
+    #about_shop a{
+        font-size: 22px;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        border: 0;
+        margin-right: 60px;
+
+    }
+
+    .shop_text li:first-child{
+        /* margin-right: 30px; */
+        margin: 0 auto;
+
+    }
+
+    .arrow{
+        width: 100%;
+        position: absolute;
+        top: 65%;
+        left: 30%;
+    }
+
+
+
+
+
+}
