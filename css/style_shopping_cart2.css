@@ -118,7 +118,7 @@ body{
     padding-left: 10px;
 }
 
-.product_list h2{
+.product_list h2, .h2_type{
     line-height: 1.6;
     color: #3d3932;
     font-family: 'Lato', sans-serif;
@@ -126,6 +126,10 @@ body{
 
 .product_list p{
     color: #b3b3b3;
+}
+
+.product_list li .none{
+    display: none;
 }
 
 /* ----------------- 訂單資訊(總計) ----------------- */
@@ -253,12 +257,16 @@ article h3{
 /* ----------- 訂購須知 -------------- */
 
 .left .notice{
+    list-style: square;
     width: 80%;
     font-size: 14px;
     color: #82796a;
     line-height: 1.6;
+    padding-left: 30px;
     margin-bottom: 20px;
 }
+
+
 
 
 /* ------------ 送貨資料 ------------------ */
@@ -349,4 +357,106 @@ article h3{
 .right a:hover{
     background-color: #3d3932;
     outline: 1px solid #3d3932;
+}
+
+
+/* ------------------ RWD ----------------------- */
+
+@media screen and (max-width: 414px){
+
+
+    .wrapper{
+        width: 85%;
+    }
+
+
+    .top{
+        margin-top: 90px;
+    }
+
+    .cart_info_nav{
+        display: none;
+    }
+
+    .product_list{
+        flex-wrap: wrap;
+    }
+
+    .product_list li:nth-child(2){
+        flex-grow: 0;
+        flex-basis: 200px;
+    }
+
+    .product_list li:nth-child(3){
+        text-align: right;
+    }
+
+
+
+    .product_list li:nth-child(4){
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .product_list li:last-child{
+        text-align: right;
+        margin-top: 10px;
+    }
+
+    .product_list li .none{
+        display: block;
+        line-height: 1.6;
+    }
+
+    .product_list li:nth-last-child(2){
+        display: flex;   
+        font-size: 14px;     
+    }
+
+
+    .summary{
+        margin-left: 0;
+        margin-top: 50px;
+        width: auto;
+    }
+
+    .subtotal, .freight, .total{
+        margin: 0 0 15px 0;
+    }
+
+    article{
+        flex-direction: column;
+    }
+
+    article h2, article h3, .right label{
+        font-size: 14px;
+    }
+
+    .left .notice{
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .left .remark{
+        width: 95%;
+    }
+
+    .cart_info h1, article h1{
+        margin-bottom: 20px;
+    }
+
+    .right .name, .phone, .right .credit li input {
+        width: 95%;
+    }
+
+    .right .date{
+        width: 95%;
+    }
+
+    .right a{
+        font-size: 14px;
+        line-height: 2.5;
+    }
+
+
 }

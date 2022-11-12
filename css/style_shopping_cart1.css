@@ -485,6 +485,10 @@ article{
         margin-top: 20px;
     }
 
+    .delivery p{
+        font-size: 14px;
+    }
+
     .address{
         width: 97%;
         line-height: 2.5;
@@ -498,6 +502,11 @@ article{
 
     .notice ul li{
         line-height: 1.6;
+    }
+
+    .summary a{
+        font-size: 14px;
+        line-height: 2.5;
     }
 
 }
