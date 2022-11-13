@@ -1,34 +1,33 @@
 @import url(reset.css);
 
-.news{
-    width: 90%;
+section{
+    width: 70%;
     margin: 0 auto;
+}
+
+.news{
+    margin-top: 100px;
     /* border: 1px solid red; */
 }
 
 .news img{
-    width: 900px;
-    height: 400px;
+    width: 100%;
     display: block;
     margin: 0 auto;
-    margin-top: 100px;
+
 }
 
 
 .news h1{
     color:#3d3932;
-    font-size: 24px;
-    width: 900px;
-    margin: 0 auto;
+    font-size: 20px;
     margin-top: 30px;
 
 }
 
 .news h2{
     color: #B3B3B3;
-    font-size: 18px;
-    width: 900px;
-    margin: 0 auto;
+    font-size: 12px;
     line-height: 1.6;
 
 }
@@ -36,8 +35,96 @@
 .news p{
     color: #82796a;
     line-height: 1.6;
-    font-size: 20px;
-    width: 900px;
-    margin: 30px auto;
+    font-size: 16px;
+    margin: 30px auto 20px;
 
+}
+
+hr{
+    border: 0;
+    height: 0.5px;
+    background-color: rgb(179, 179, 179, .5);
+}
+
+/* --------------- 產品陳列區 ------------ */
+
+.display1{
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.display1 img, .display2 img{
+    width: 300px;
+    height: 300px;
+}
+
+.display1 span, .display2 span{
+    padding-top: 30px;
+    padding-left: 30px;
+    flex-grow: 1;
+}
+
+.display1 h1, .display2 h1{
+    font-size: 20px;
+    color: #3d3932;
+    font-family: 'Noto Sans TC', sans-serif;;
+}
+
+.display1 p, .display2 p{
+    font-size: 16px;
+    color: #82796a;
+    line-height: 1.6;
+}
+
+.display2{
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+/* ----------------- RWD ---------------- */
+
+@media screen and (max-width: 414px){
+
+    section{
+        width: 85%;
+    }
+
+    .news{
+        margin-top: 60px;
+    }
+
+    .news h1{
+        font-size: 18px;
+    }
+
+    .news p{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .display1, .display2{
+        flex-direction: column;
+    }
+
+    .display1 img, .display2 img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .display1 span, .display2 span{
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .display1 h1, .display2 h1{
+        font-size: 18px;
+    }
+
+    .display1 p, .display2 p{
+        font-size: 14px;
+    }
+
+    
 }
