@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Courgette&family=Lato:ital@1&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Courgette&family=Dancing+Script:wght@600&family=Lato:ital@1&family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -64,10 +65,38 @@
 
 <!---------- banner輪播 -------------->
 
-    <div id="banner">
-        <img src="img/bannerpic1.png" alt="">
+    <div id="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./img/bannerpic1.png">
+            <div class="text">Have a good cake in <br>Eustoma</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/bannerpic2.png">
+            <div class="text">Have a good cake in <br>Eustoma</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/bannerpic3.png">
+            <div class="text">Have a good cake in <br>Eustoma</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" id="next" onclick="plusSlides(1)">&#10095;</a>
 
     </div>
+
+    <!-- The dots/circles -->
+    <div class="dot_circles">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
 
 <!---------- 最新消息 ----------------->
 
@@ -403,12 +432,7 @@
 
     </footer>
 
-    
-
-
-
-
-
+    <script src="./js/index.js"></script>
 
     
 </body>
