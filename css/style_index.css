@@ -12,13 +12,12 @@ body{
 
 /* Slideshow container */
 .slideshow-container {
-    /* max-width: 1000px; */
     position: relative;
     margin: auto;
   }
 
 #slideshow-container img{
-    width: 100%;
+    width: 95%;
     display: block;
     margin: 0 auto;
     margin-top: 90px;
@@ -35,10 +34,10 @@ body{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 80%;
+    top: 60%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
+    padding: 12px;
     color: rgb(255, 255, 255, .5);
     font-weight: bold;
     font-size: 18px;
@@ -49,7 +48,12 @@ body{
 
   /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: 2.5%;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 2.5%;
     border-radius: 3px 0 0 3px;
   }
 
@@ -59,17 +63,19 @@ body{
   }
 
 
-  /* Caption text */
+  /* 文字敘述 Caption text */
 #slideshow-container .text {
+    /* border: 1px solid red; */
     font-family: 'Dancing Script', cursive;
     color: #f2f2f2;
     font-size: 48px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
+    bottom: 15%;
+    width: 85%;
     text-align: center;
   }
+
 
   /* The dots/bullets/indicators */
 
@@ -565,11 +571,35 @@ body{
 
 @media screen and (max-width: 414px){
 
-    /* ----------- banner 輪播 ----------------- */
+/* ----------- banner 輪播 ----------------- */
 
-    #banner img{
+    #slideshow-container img{
         width: 100%;
         margin-top: 60px;
+    }
+
+    #slideshow-container .text{
+        bottom: 79%;
+        left: -8px;
+        font-size: 20px;
+        width: 80%;
+
+    }
+
+
+    .prev{
+        top: 18%;
+        left: 0;
+    }
+
+    .next{
+        top: 18%;
+        right: 0;
+    }
+
+    .dot{
+        width: 8px;
+        height: 8px;
     }
 
 
