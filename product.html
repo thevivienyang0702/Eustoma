@@ -91,7 +91,7 @@
 
         <!------- 左方圖片區 -------->
 
-        <div class="left_img">
+        <div class="left_img top_box">
 
             <img src="./img/product_bigpic1.png" alt="">
         
@@ -123,7 +123,7 @@
 
         <!-------- 右方文字區 -------------->
 
-        <div class="right_text">
+        <div class="right_text top_box">
 
             <!-- 文字部分 -->
             <div class="text_box">
@@ -190,15 +190,16 @@
     <section class="detail">
 
         <!-- 導覽列 -->
-        <ul class="detail_nav">
-            <li><a href="#">商品介紹</a></li>
-            <li><a href="#">規格說明</a></li>
-            <li><a href="#">運送方式</a></li>
-        </ul>
 
-        <!-- 文案1 -->
+        <div class="tab" id="navbar">
+            <button class="tablinks" onclick="openText(event, 'Introduction')"  id="defaultOpen">商品介紹</button>
+            <button class="tablinks" onclick="openText(event, 'Dimensions')">規格說明</button>
+            <button class="tablinks" onclick="openText(event, 'Delivery')">運送方式</button>
+        </div>
 
-        <div class="text">
+    <!-- 文案1 / Tab content -->
+
+        <div id="Introduction" class="tabcontent">
             <h1>草莓伯爵茶戚風</h1>
             <h2>
                 綿密的伯爵茶香戚風蛋糕<br>
@@ -220,7 +221,7 @@
 
         <!-- 文案2 -->
 
-        <div class="text">
+        <div id="Dimensions" class="tabcontent">
             <h1>規格說明</h1>
             <h2>
                 商品尺寸：<br>
@@ -240,13 +241,13 @@
 
         <!-- 文案3 -->
 
-        <div class="text">
+        <div id="Delivery" class="tabcontent">
             <h1>運送方式</h1>
 
             <h2>
                 指定配送方式：<br>
                 限<span>工作室自取</span>，下單選填時需注意<br>
-                <br>▴鮮奶油蛋糕不耐碰撞，因此沒有提供宅配服務
+                <br>▴鮮奶油蛋糕不耐碰撞，故沒有提供宅配服務
             </h2>
 
         </div>
@@ -365,6 +366,7 @@
     </footer>
 
 
+    <script src="./js/product_tab.js"></script>
     
 </body>
 </html>
