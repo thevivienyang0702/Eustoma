@@ -105,6 +105,42 @@
     display: none;
   }
   
+
+  /* 至頂按鈕 */
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 25px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    border: 1px solid #b3b3b3;
+    font-size: 18px; /* Increase font size */
+  }
+
+  #myBtn .fa-chevron-up{
+    font-size: 18px;
+    color: #b3b3b3;
+  }
+
+  #myBtn:hover .fa-chevron-up{
+    color: #81a17a;
+    font-weight: 600;
+  }
+
+  #myBtn:hover{
+    outline: 1px solid #81a17a; /* Add a dark-grey background on hover */
+
+  }
+
+
+
   
   .header_icon li{
     font-size: 24px;
@@ -515,6 +551,12 @@ padding: 20px;
     }
 
 
+    #myBtn{
+      padding: 10px;
+      bottom: 40%;
+      right: 3%;
+
+    }
 
 
 }
