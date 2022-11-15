@@ -9,127 +9,140 @@
     top: 0;
     width: 100%;
     z-index: 5;
-
-}
-
-
-#top{
+  
+  }
+  
+  
+  #top{
     width: 90%;
     margin: 0 auto;
     display: flex;
     /* border: 1px solid red; */
-
-}
-
-
-.header_logo{
+  
+  }
+  
+  
+  .header_logo{
     width: 80px;
-}
-
-
-.header_list{ 
+  }
+  
+  
+  .header_list{ 
     /* border: 1px solid blue; */
     display: flex;
     flex-grow: 1;
     position: relative;
-}
-
-
-.header_list li{
+  }
+  
+  
+  .header_list li{
     /* border: 1px solid red; */
     font-size: 20px;
     margin: 0 auto;
     margin-top: 30px;
-
-}
-
-.header_list .page{
+    position: relative;
+  
+  }
+  
+  
+  .header_list .page{
     border-bottom: 3px solid #81a17a;
-}
-
-
-.header_list li a{
+  }
+  
+  
+  .header_list li a{
     text-decoration: none;
     color: #81a17a;
     display: block;
     text-align: center;
     line-height: 1.6;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-
-}
-
-/* ----- 子選單 ------ */
-.header_list ol{
+  
+  }
+  
+  /* ----- 子選單 ------ */
+  .header_list ol{
     border: 1px solid #b3b3b3;
     background-color: #fff;
     color: #81a17a;
     position: absolute;
     display: none;
-
-}
-
-.header_list ol li{
+  
+  }
+  
+  .header_list ol li{
     /* border: 1px solid red; */
     margin-top: 0px;
     padding: 10px 5px;
-}
-
-.header_list ol li a{
+  }
+  
+  .header_list ol li a{
     width: 100px;
     text-align: left;
     font-size: 16px;
-
-}
-
-
-.header_icon{
+  
+  }
+  
+  
+  .header_icon{
     display: flex;
     padding-right: 30px;
     margin-top: 30px;
-}
-
-/* RWD漢堡線 */
-#top .fa-bars{
+  }
+  
+  /* RWD漢堡線 */
+  #top .fa-bars{
     display: none;
-}
-
-
-.header_icon li{
+  }
+  
+  /* RWD側選單關閉X */
+  #top .header_list > li:first-child{
+    display: none;
+  }
+  
+  /* RWD側選單的下拉icon */
+  .header_list .fa-caret-down{
+    display: none;
+  }
+  
+  
+  .header_icon li{
     font-size: 24px;
     margin-left: 10px;
-}
-
-
-.header_icon li a{
+  }
+  
+  
+  .header_icon li a{
     color: #82796a;
-}
-
-
-/* --------header選單hover後---------- */
-
-/* 主選單hover後效果 */
-.header_list > li > a:hover{
+  }
+  
+  
+  /* --------header選單hover後---------- */
+  
+  /* 主選單hover後效果 */
+  .header_list > li > a:hover{
     box-shadow: inset 0 -3px 0 0 #81a17a;
-
-}
-
-/* 右方icon hover後效果 */
-.header_icon li a:hover{
+  
+  }
+  
+  
+  /* 右方icon hover後效果 */
+  .header_icon li a:hover{
     color: #3d3932;
-}
-
-
-/* 子選單hover後效果 */
-.header_list ol li:hover a{
+  }
+  
+  
+  /* 子選單hover後效果 */
+  .header_list ol li:hover a{
     box-shadow: none;
     color: #3d3932;
-}
-
-/* 主選單hover時出現子選單 */
-.header_list li:hover ol{
+  }
+  
+  /* 主選單hover時出現子選單 */
+  .header_list li:hover ol{
     display: block;
-}
-
+  }
+  
 
 
 
@@ -275,81 +288,176 @@
 
 @media screen and (max-width: 414px){
 
-    /* -------------- 頁首 --------------- */
+  /* -------------- 頁首 --------------- */
 
-    #top{
-        width: auto;
-        position: relative;
-    }
+  #top{
+    width: auto;
+    position: relative;
+}
 
-    .header_logo{
-        width: 50px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-
-
-    .header_list{
-        width: 50%;
-        height: 100vh;
-        background-color: white;
-        flex-direction: column;
-        padding: 30px 15px 0 15px;
-
-        position: fixed;
-        left: 0px;
-        top: 55px;
-
-        left: -500px;
-        transition: all .5s;
-
-    }
-
-    .header_list .page{
-        border: 0;
-    }
+.header_logo{
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
 
 
-    .header_icon{
-        margin-top: 15px;
-        margin-right: 10px;
-        margin-left: auto;
-        padding: 0;
-    }
+.header_list{
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
 
-    .header_icon li{
-        font-size: 16px;
-    }
+    /* position: fixed; */
+    /* left: 0px; */
+    /* top: 55px; */
 
+    /* left: -500px; */
+    /* transition: all .5s; */
 
-    #top .fa-bars{
-        display: block;
-        color: #82796a;
-        font-size: 16px;
-        margin-top: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-        order: 3;
-    }
+}
 
-    #top .fa-bars:hover + ul{
-        left: 0;
-        /* display: block; */
-    }
+.header_list .page{
+    border: 0;
+}
 
 
-    .header_list li{
-        font-size: 16px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
+.header_icon{
+    margin-top: 15px;
+    margin-right: 10px;
+    margin-left: auto;
+    padding: 0;
+}
+
+.header_icon li{
+    font-size: 16px;
+}
+
+
+/* 漢堡線 */
+#top .fa-bars{
+    display: block;
+    color: #82796a;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    order: 3;
+}
+
+/* RWD側選單關閉X */
+#top .header_list li:first-child{
+  display: block;
+}
+
+#top .fa-caret-down{
+  display: block;
+}
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+}
+
+.header_list li{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+}
 
 
 
-    .header_list li a{
-        text-align: left;
+.header_list li a{
+    text-align: left;
 
-    }
+}
+
+
+/* The side navigation menu */
+.sidenav {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+left: 0;
+/* background-color: #111; Black */
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 20px; /*Place content 60px from the top*/
+transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav li {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 16px;
+color: #81a17a;
+display: block;
+transition: 0.3s;
+margin-bottom: 10px;
+}
+
+.dropdown-btn {
+/* padding: 8px 8px 8px 32px; */
+padding: 0;
+text-decoration: none;
+font-size: 16px;
+color: #81a17a;
+display: block;
+border: none;
+background: none;
+width:100%;
+text-align: left;
+cursor: pointer;
+outline: none;
+}
+
+/* Add an active class to the active dropdown button */
+/* .active {
+color: white;
+} */
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.header_list .dropdown-container {
+border: 0;
+display: none;
+padding-top: 8px;
+padding-left: 8px;
+
+position: static;
+}
+
+.dropdown-container li{
+margin-bottom: 0;
+
+}
+
+.dropdown-container li a{
+color: #b3b3b3;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 0;
+font-size: 24px;
+margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .5s;
+padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* @media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+} */
 
 
     /* ------------------- 頁尾 ------------------ */
@@ -405,5 +513,8 @@
         padding: 5px;
 
     }
+
+
+
 
 }

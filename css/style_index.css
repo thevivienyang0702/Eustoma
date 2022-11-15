@@ -151,8 +151,9 @@ body{
     color: #82796a;
     display: flex;
     border-bottom: 1px solid rgb(129, 161, 122, 0.5);
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    line-height: 1.6;
     
 }
 

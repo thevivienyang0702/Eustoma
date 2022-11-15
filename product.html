@@ -37,37 +37,44 @@
         <div id="top">            
     
             <a href="index.html"><img src="img/logo.png" alt="" class="header_logo"></a>
-
-            <i class="fa-solid fa-bars"></i>       
-
-            <ul class="header_list">
+       
+            <!-- RWD漢堡線 -->
+            <i class="fa-solid fa-bars" onclick="openNav()"></i>
+    
+            <ul class="header_list sidenav" id="mySidenav">
+                <!-- RWD側選單關閉X -->
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
                 <li><a href="about.html">關於洋桔梗</a></li>
                 <li><a href="news.html">最新消息</a></li>
                 <li>
-                    <a href="all_product.html">所有商品</a>
+                    <a href="javascript:void(0)" class="dropdown-btn">所有商品
+                      <!-- RWD側選單的下拉icon -->
+                      <i class="fa fa-caret-down"></i>
+                                        
+                    </a>
+    
                     <!-- 子選單 -->
-                    <ol>
-                        <li><a href="all_product.html">蛋糕專區</a></li>
-                        <li><a href="all_product.html">點心禮盒</a></li>
-                        <li><a href="all_product.html">季節限定</a></li>
+                    <ol class="dropdown-container">
+                      <li><a href="all_product.html">蛋糕專區</a></li>
+                      <li><a href="all_product.html">點心禮盒</a></li>
+                      <li><a href="all_product.html">季節限定</a></li>
                     </ol>
+                
                 </li>
+    
                 <li><a href="notice.html">訂購須知</a></li>
             </ul>
-
+    
             <ul class="header_icon">
                 <li><a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
                 <li><a href="shopping_cart1.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
-
+    
         </div>
-
-
+    
+    
     </header>
-
-
-
 <article>
     <!----------- 最上方麵包屑 -------------->
         <div class="crumb">
@@ -366,6 +373,7 @@
     </footer>
 
 
+    <script src="./js/header.js"></script>
     <script src="./js/product_tab.js"></script>
     
 </body>
