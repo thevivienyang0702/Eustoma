@@ -105,28 +105,39 @@
 
         <div class="left_img top_box">
 
-            <img src="./img/product_bigpic1.png" alt="">
+            <!-- 大圖 -->
+            <div class="big_img">
+                <img src="./img/product_bigpic1.png" alt="" width="100%" class="JS-big">
+            </div>
         
+            <!-- 小圖 -->
+            <ul class="small__img JS-small">
 
-            <ul>
+                <li>
+                    <picture>
+                        <source srcset="./img/product_smallpic1_rwd.png" media="(max-width: 414px)">
+                        <img src="./img/product_bigpic1.png" alt="" width="95%" height="95%" id="bigpic1">
+                    </picture>
+                </li>
+
                 <li>
                     <picture>
                         <source srcset="./img/product_smallpic2_rwd.png" media="(max-width: 414px)">
-                        <img src="./img/product_smallpic2.png" alt="">
+                        <img src="./img/product_bigpic2.png" alt="" width="95%" height="95%" id="bigpic2">
                     </picture>
                 </li>
 
                 <li>
                     <picture>
                         <source srcset="./img/product_smallpic3_rwd.png" media="(max-width: 414px)">
-                        <img src="./img/product_smallpic3.png" alt="">
+                        <img src="./img/product_bigpic3.png" alt="" width="95%" height="95%" id="bigpic3">
                     </picture>
                 </li>
 
                 <li>
                     <picture>
                         <source srcset="./img/product_smallpic4_rwd.png" media="(max-width: 414px)">
-                        <img src="./img/product_smallpic4.png" alt="">
+                        <img src="./img/product_bigpic4.png" alt="" width="95%" height="95%" id="bigpic4">
                     </picture>
                 </li>
             </ul>
@@ -148,7 +159,7 @@
                         內餡是香甜的卡士達奶油夾心和新鮮草莓<br>
                         外圈抹上伯爵茶香緹有著濃郁的奶茶香氣<br>
                         是草莓控和奶茶控的夢幻甜點！<br>
-                        <br>今天是草莓味的一天，有時候快樂就是那麼簡單<br>
+                        今天是草莓味的一天，有時候快樂就是那麼簡單<br>
                         萬物皆可爱，願我們都莓煩惱。<br>
                     
                     </h2>
@@ -159,28 +170,28 @@
             </div>   
 
                 
-                <div class="wrapper">
+            <div class="wrapper">
 
-                    <!-- 左邊尺寸 -->
-                    <div class="size">
-                        <p>尺寸</p>
-                        <button>4吋</button>
-                        <button>6吋</button>
-                    </div>
+                <!-- 左邊尺寸 -->
+                <div class="size">
+                    <p>尺寸</p>
+                    <button>4吋</button>
+                    <button>6吋</button>
+                </div>
 
-                    <!-- 右邊數量 -->
-                    <div class="quantity">
-                        <p>數量</p>
+                <!-- 右邊數量 -->
+                <div class="quantity">
+                    <p>數量</p>
 
-                        <ul class="qty_numbox">
-                            <li><button class="minus">-</button></li>
-                            <li><input type="text" class="input_num" value="1"></li>
-                            <li><button class="plus">+</button></li>
-                        </ul>
-
-                    </div>
+                    <ul class="qty_numbox">
+                        <li><button class="minus">-</button></li>
+                        <li><input type="text" class="input_num" value="1"></li>
+                        <li><button class="plus">+</button></li>
+                    </ul>
 
                 </div>
+
+            </div>
 
             
 
@@ -383,9 +394,12 @@
     </footer>
 
 
-    
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
+
     <script src="./js/header.js"></script>
     <script src="./js/product_tab.js"></script>
+    <script src="./js/product.js"></script>
 
     
 </body>
