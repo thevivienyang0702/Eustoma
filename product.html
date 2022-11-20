@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>草莓伯爵茶戚風 | 洋桔梗甜點工作室</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -166,7 +168,10 @@
 
                     <h3>本產品限<span>「工作室自取」</span></h3>
 
-                    <p>NT$ 580</p>
+                    <div class="price_list">
+                        <p class="price current" id="tab1">NT$ 580</p>
+                        <p class="price" id="tab2">NT$ 810</p>
+                    </div>
             </div>   
 
                 
@@ -175,8 +180,8 @@
                 <!-- 左邊尺寸 -->
                 <div class="size">
                     <p>尺寸</p>
-                    <button>4吋</button>
-                    <button>6吋</button>
+                    <button data-tab="tab1" class="selected">4吋</button>
+                    <button data-tab="tab2">6吋</button>
                 </div>
 
                 <!-- 右邊數量 -->

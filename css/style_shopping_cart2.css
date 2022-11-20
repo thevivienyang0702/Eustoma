@@ -266,6 +266,7 @@ article h3{
     color: #3d3932;
     padding: 5px;
     border-radius: 3px;
+    resize: none;
 
 }
 
@@ -395,6 +396,7 @@ article h3{
 
     .product_list{
         flex-wrap: wrap;
+        border-bottom: 1px solid #b3b3b3;
     }
 
     .product_list li:nth-child(2){
