@@ -210,12 +210,13 @@ body{
 
 .minus{
     border-radius: 3px 0 0 3px;
+    cursor: pointer;
 }
 
 .plus{
     border-radius: 0 3px 3px 0;
+    cursor: pointer;
 }
-
 
 
 .input_num{
@@ -442,6 +443,7 @@ body{
 
     .right_text{
         margin-left: 0;
+        padding-left: 0;
     }
 
     .text_box{

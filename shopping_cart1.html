@@ -125,8 +125,10 @@
                     <p>4吋</p>
                 </li>
 
-                <li>
-                    <h2>NT$580</h2>
+                <li> <!-- 單價 !-->
+                    <h2>NT$
+                        <span class="price_val">580</span>
+                    </h2>
                 </li>
 
                 <li>
@@ -137,8 +139,48 @@
                     </ol>
                 </li>
 
+                <li> <!-- 小計 !-->
+                    <h2 class="cost">NT$
+                        <span class="cost_val">580</span>
+                    </h2>
+                </li>
+
                 <li>
-                    <h2>NT$580</h2>
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+            </ul>
+
+<!-------------------- 測試用 --------------------------->
+
+            <ul class="product_list">
+
+                <li>
+                    <img src="./img/shopping_cart1_2.png" alt="">
+                </li>
+
+                <li>
+                    <h2>聖多諾黑</h2>
+                    <p>4吋</p>
+                </li>
+
+                <li> <!-- 單價 !-->
+                    <h2>NT$
+                        <span class="price_val">600</span>
+                    </h2>
+                </li>
+
+                <li>
+                    <ol class="input_box">
+                        <li><button class="minus">-</button></li>
+                        <li><input type="text" class="input_num" value="1"></li>
+                        <li><button class="plus">+</button></li>
+                    </ol>
+                </li>
+
+                <li> <!-- 小計 !-->
+                    <h2 class="cost">NT$
+                        <span class="cost_val">580</span>
+                    </h2>
                 </li>
 
                 <li>
@@ -194,7 +236,7 @@
         
                 <div class="subtotal">
                     <p>小計：</p>
-                    <p>NT$580</p>
+                    <p></p>
                 </div>
         
                 <div class="freight">
@@ -204,7 +246,7 @@
 
                 <div class="total">
                     <p>合計：</p>
-                    <p>NT$580</p>
+                    <p></p>
                 </div>
             
             <a href="shopping_cart2.html">前往結帳</a>
@@ -334,9 +376,11 @@
 
     </footer>
 
+
+    <!-- jQuery -->
+    <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/header.js"></script>
-
-
+    <script src="./js/shopping_cart.js"></script>
 
     
 </body>

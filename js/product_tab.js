@@ -1,3 +1,5 @@
+// 商品頁按tab分頁可做不同內文的切換
+
 function openText(evt, textName) {
     // Declare all variables
     var i, tabcontent, tablinks;

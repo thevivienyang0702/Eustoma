@@ -134,6 +134,7 @@ body{
     position: absolute;
     top: 2px;
     right: 0px;
+    cursor: pointer;
 }
 
 .product_list > li:nth-child(2){
@@ -157,8 +158,6 @@ body{
 }
 
 
-
-
 .product_list p{
     color: #b3b3b3;
 }
@@ -177,7 +176,6 @@ body{
 
 .product_list .input_box .minus, .plus{
     border: 1px solid  rgb(130, 121, 106, .9);
-    border-radius: 3px;
     display: block;
     width: 25px;
     height: 25px;
@@ -188,16 +186,26 @@ body{
     font-size: 20px;
 }
 
+.minus{
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+}
+
+.plus{
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+
 
 .input_box .input_num{
     outline: 0;
     text-align: center;
     border: 1px solid  rgb(130, 121, 106, .9);
-    border-radius: 3px;
     /* outline: 1px solid green; */
     color: #3d3932;
     width: 100px;
-    line-height: 1.6;
+    line-height: 23px;
     padding: 0 3px;
 }
 
@@ -420,6 +428,7 @@ article{
 
     }
 
+    /* ------ 導覽列消失 ------ */
     .cart_info_nav{
         display: none;
     }
@@ -427,24 +436,28 @@ article{
     .product_list{
         /* flex-direction: column; */
         flex-wrap: wrap;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #b3b3b3;
 
     }
 
     .product_list > li:nth-child(2){
         order: 2;
         flex-grow: 0;
-        flex-basis: 250px;
+        flex-basis: 180px;
         padding: 0;
         margin-left: 5px;
     }
 
+
+
+    /* -- 單價藏起來 -- */
     .product_list > li:nth-child(3){
-        order: 6;
-        margin-top: 10px;
-        text-align: right;
+        /* display: none; */
+        order: 3;
     }
 
-
+    
     .product_list > li:nth-child(4){
         order: 4;
         flex-grow: 0;
@@ -453,14 +466,15 @@ article{
 
     }
 
+    /* -- 小計可隨數量變動 -- */
     .product_list > li:nth-child(5){
-        display: none;
-    }
-
-    .product_list > li:last-child{
-        order: 3;
+        order: 6;
         margin-top: 10px;
+        flex-basis: 100px;
     }
+    
+    
+
 
     .product_list li{
         flex-grow: 0;
