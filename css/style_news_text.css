@@ -7,6 +7,7 @@ section{
 
 .news{
     margin-top: 100px;
+    /* position: relative; */
     /* border: 1px solid red; */
 }
 
@@ -14,30 +15,31 @@ section{
     width: 100%;
     display: block;
     margin: 0 auto;
-
 }
+
+/* .news .news_title{
+    position: absolute;
+    left: 23%;
+    top: 30%;
+} */
 
 
 .news h1{
     color:#3d3932;
-    font-size: 20px;
-    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 30px auto;
+    text-align: center;
 
 }
 
-.news h2{
-    color: #B3B3B3;
-    font-size: 12px;
-    line-height: 1.6;
-
-}
 
 .news p{
     color: #82796a;
     line-height: 1.6;
     font-size: 16px;
-    margin: 30px auto 20px;
-
+    margin: 30px auto 40px;
+    text-align: center;
 }
 
 hr{
@@ -96,12 +98,15 @@ hr{
     }
 
     .news h1{
+        margin: 20px auto;
         font-size: 18px;
+        text-align: left;
     }
 
     .news p{
         font-size: 14px;
-        margin-top: 20px;
+        margin: 20px auto;
+        text-align: left;
     }
 
     .display1, .display2{
