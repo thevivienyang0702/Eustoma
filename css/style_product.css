@@ -86,6 +86,10 @@ body{
     margin-top: 20px;
 }
 
+.left_img ul li{
+    cursor: pointer;
+}
+
 
 
 /* ------------- 右方文字區 --------------------- */
