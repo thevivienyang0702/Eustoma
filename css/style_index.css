@@ -11,7 +11,7 @@ body{
 
 
 /* Slideshow container */
-.slideshow-container {
+#slideshow-container {
     position: relative;
     margin: auto;
   }
